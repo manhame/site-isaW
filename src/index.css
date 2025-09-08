@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 39 100% 97%; /* amber-50 */
+    --foreground: 39 10% 25%; /* darker text for readability on light bg */
+
+    --card: 39 100% 98%; /* amber-50 slightly lighter or same */
+    --card-foreground: 39 10% 20%;
+
+    --popover: 39 100% 98%;
+    --popover-foreground: 39 10% 20%;
+
+    --primary: 39 95% 55%; /* amber-500 */
+    --primary-foreground: 0 0% 100%; /* white */
+
+    --secondary: 30 100% 55%; /* orange-500 */
+    --secondary-foreground: 0 0% 100%; /* white */
+
+    --muted: 39 30% 90%; /* amber-200 */
+    --muted-foreground: 39 20% 45%; /* amber-700 for muted text */
+
+    --accent: 30 100% 60%; /* orange-600 */
+    --accent-foreground: 0 0% 100%; /* white */
+
+    --destructive: 0 84% 60%; /* red-500 */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 39 30% 85%; /* amber-300 */
+    --input: 39 30% 85%; /* amber-300 */
+    --ring: 39 95% 55%; /* amber-500 */
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-800;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-orange-500;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-amber-500 to-orange-500 text-white;
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+
+  /* dégradé de bordure */
+  background: linear-gradient(to right, #fbbf24, #fb923c);
+
+  /* 1) D'abord les versions préfixées WebKit */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+
+  /* 2) Ensuite les versions standard (Firefox) */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.15), 0 4px 6px -4px rgba(245, 158, 11, 0.1); /* amber-500 based shadow */
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}

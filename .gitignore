@@ -1,0 +1,19 @@
+# Dépendances et builds
+node_modules/
+dist/
+.vite/
+*.log
+
+# Environnements / secrets
+.env
+.env.*
+!.env.example
+
+# OS / éditeur
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Divers
+coverage/
+*.local
