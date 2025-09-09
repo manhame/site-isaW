@@ -81,7 +81,7 @@ const HomePage = () => {
               <img 
                 alt="Portrait de la praticienne"
                 className="rounded-lg shadow-md w-full h-auto object-cover max-h-96"
-               src="/images/isabelle-wencker.jpg" />
+               src={`${import.meta.env.BASE_URL}images/isabelle-wencker.jpg`} />
             </div>
             <div className="md:w-2/3">
               <p className="text-gray-700 mb-4 text-justify">
