@@ -48,11 +48,11 @@ const ReboutologiePage = () => {
             <img 
               alt="Technique de Reboutologie sur le dos"
               className="rounded-lg shadow-lg w-full h-auto object-cover"
-             src="/images/isabelle-wencker-reboutologie-accueil-1.jpg" />
+             src={`${import.meta.env.BASE_URL}images/isabelle-wencker-reboutologie-accueil-1.jpg`} />
             <img 
               alt="Technique de Reboutologie sur les épaules"
               className="rounded-lg shadow-lg w-full h-auto object-cover"
-             src="/images/isabelle-wencker-reboutologie-2.jpg" />
+             src={`${import.meta.env.BASE_URL}images/isabelle-wencker-reboutologie-2.jpg`} />
             <div className="mt-6 bg-amber-50 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3 text-amber-700">Un massage en profondeur pour :</h3>
               <ul className="space-y-2 text-gray-700">

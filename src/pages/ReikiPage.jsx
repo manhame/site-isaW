@@ -56,7 +56,7 @@ const ReikiPage = () => {
               <img 
                 alt="Praticienne de Reiki massant les pieds d'un client"
                 className="rounded-xl shadow-2xl w-full h-auto object-cover"
-                src="/images/isabelle-wencker-reiki-1.jpg" 
+                src={`${import.meta.env.BASE_URL}images/isabelle-wencker-reiki-1.jpg`} 
               />
                <div className="absolute -bottom-4 -right-4 bg-amber-500 p-4 rounded-full shadow-lg">
                 <Sparkles size={32} className="text-white" />
@@ -120,7 +120,7 @@ const ReikiPage = () => {
                      <img 
                         alt="Praticienne de Reiki effectuant un soin sur le dos d'un client"
                         className="rounded-xl shadow-2xl w-full h-auto object-cover"
-                        src="/images/isabelle-wencker-reiki-2.jpg" 
+                        src={`${import.meta.env.BASE_URL}images/isabelle-wencker-reiki-2.jpg`} 
                     />
                     <div className="absolute -top-4 -left-4 bg-orange-500 p-4 rounded-full shadow-lg">
                         <ThumbsUp size={32} className="text-white" />

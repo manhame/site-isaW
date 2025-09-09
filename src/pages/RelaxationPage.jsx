@@ -36,7 +36,7 @@ const RelaxationPage = () => {
               <img 
                 alt="Massage bien-être de la jambe"
                 className="rounded-xl shadow-2xl w-full h-auto object-cover"
-                src="/images/isabelle-wencker-bien-etre-1.jpg" 
+                src={`${import.meta.env.BASE_URL}images/isabelle-wencker-bien-etre-1.jpg`} 
               />
               <div className="absolute -bottom-4 -right-4 bg-amber-500 p-4 rounded-full shadow-lg">
                 <Spa size={32} className="text-white" />
@@ -141,7 +141,7 @@ const RelaxationPage = () => {
            <img 
               alt="Personne recevant un massage relaxant des lèvres"
               className="rounded-xl shadow-lg w-full h-auto object-cover max-h-96 mx-auto"
-              src="/images/isabelle-wencker-bien-etre-2.jpg" 
+              src={`${import.meta.env.BASE_URL}images/isabelle-wencker-bien-etre-2.jpg`} 
             />
             <p className="text-sm text-gray-500 mt-3 italic">
                 Offrez-vous une parenthèse de douceur et de vitalité.

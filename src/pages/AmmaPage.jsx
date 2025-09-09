@@ -63,7 +63,7 @@ const AmmaPage = () => {
               <img 
                 alt="Personne recevant un massage AMMA assis sur une chaise ergonomique"
                 className="rounded-xl shadow-2xl w-full h-auto object-cover"
-                src="/images/isabelle-wencker-amma-assis-1.jpg"
+                src={`${import.meta.env.BASE_URL}images/isabelle-wencker-amma-assis-1.jpg`}
               />
               <div className="absolute -bottom-4 -right-4 bg-amber-500 p-4 rounded-full shadow-lg">
                 <ThumbsUp size={32} className="text-white" />
@@ -170,7 +170,7 @@ const AmmaPage = () => {
             <img 
                 alt="Une séance de AMMA assis en entreprise"
                 className="rounded-xl shadow-lg w-full h-auto object-cover max-h-96 mx-auto"
-                src="/images/isabelle-wencker-amma-assis-2.jpg" 
+                src={`${import.meta.env.BASE_URL}images/isabelle-wencker-amma-assis-2.jpg`} 
             />
             <p className="text-sm text-gray-500 mt-3 italic">
                 L'Amma Assis : une pause bien-être revitalisante pour vous ou vos équipes.
