@@ -32,7 +32,7 @@ const Navbar = () => {
     { name: "Tarifs et Contact", href: "/tarifs-et-contact" },
   ];
 
-  const logoUrl = "/images/logo-acdm.jpg";
+  const logoUrl = `${import.meta.env.BASE_URL}images/logo-acdm.jpg`;
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${

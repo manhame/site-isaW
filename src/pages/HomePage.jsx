@@ -9,35 +9,35 @@ const HomePage = () => {
       title: "Reboutologie", 
       description: "Réharmonisation des structures du corps pour soulager douleurs et tensions.", 
       link: "/reboutologie", 
-      imgSrc: "/images/isabelle-wencker-reboutologie-accueil-1.jpg", 
+      imgSrc: `${import.meta.env.BASE_URL}images/isabelle-wencker-reboutologie-accueil-1.jpg`, 
       alt: "Technique de Reboutologie appliquée sur le dos" 
     },
     { 
       title: "AMMA Assis", 
       description: "Massage sur chaise ergonomique, idéal en entreprise pour une détente rapide.", 
       link: "/amma-assis", 
-      imgSrc: "/images/isabelle-wencker-amma-assis-accueil.webp", 
+     imgSrc: `${import.meta.env.BASE_URL}images/isabelle-wencker-amma-assis-accueil.webp`, 
       alt: "Séance de massage AMMA assis" 
     },
     { 
       title: "Massage Bien-Être", 
       description: "Relaxation profonde du corps et de l'esprit pour évacuer le stress.", 
       link: "/massage-bien-etre", 
-      imgSrc: "/images/isabelle-wencker-bien-etre-accueil.webp", 
+      imgSrc: `${import.meta.env.BASE_URL}images/isabelle-wencker-bien-etre-accueil.webp`, 
       alt: "Massage bien-être sur la jambe" 
     },
     { 
       title: "Reiki", 
       description: "Soin énergétique japonais par imposition des mains pour harmoniser le corps et l'esprit.", 
       link: "/reiki", 
-      imgSrc: "/images/isabelle-wencker-reiki-accueil.jpg", 
+      imgSrc: `${import.meta.env.BASE_URL}images/isabelle-wencker-reiki-accueil.jpg`, 
       alt: "Praticienne de Reiki effectuant un soin sur les pieds" 
     },
     { 
       title: "Technique EMMETT", 
       description: "Méthode de soin corporel douce pour soulager douleurs et améliorer la mobilité.", 
       link: "/technique-emmett", 
-      imgSrc: "/images/isabelle-wencker-emmett-accueil.jpg", 
+      imgSrc: `${import.meta.env.BASE_URL}images/isabelle-wencker-emmett-accueil.jpg`, 
       alt: "Praticien appliquant la technique EMMETT" 
     },
   ];
