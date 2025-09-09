@@ -50,7 +50,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-amber-300 to-orange-300 rounded-3xl transform rotate-3 scale-105 shadow-lg"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden p-1">
                 <img 
-                  src="/images/isabelle-wencker.jpg"
+                  src={`${import.meta.env.BASE_URL}images/isabelle-wencker.jpg`}
                   alt="Portrait de la praticienne"
                   style={{ width: '100%', height: '450px', objectFit: 'cover' }} />
               </div>
